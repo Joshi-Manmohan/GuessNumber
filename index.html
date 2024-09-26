@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Welcome to the Number Guessing Game! 🌟</h1>
+        <p>✨ Choose a difficulty level and try to guess the number! ✨</p>
+        
+        <select id="difficultySelect">
+            <option value="easy">Easy (1-50)</option>
+            <option value="medium">Medium (1-100)</option>
+            <option value="hard">Hard (1-200)</option>
+        </select>
+
+        <p>✨ I'm thinking of a number between <span id="lowestNum">1</span> and <span id="highestNum">100</span>. Can you guess it? ✨</p>
+        
+        <div class="input-group">
+            <input type="number" id="guessInput" placeholder="🤔 Your Guess" />
+            <button id="guessButton">Guess</button>
+            <button id="resetButton">Reset</button>
+        </div>
+
+        <div id="message" class="message"></div>
+        <div id="guessCount" class="guessCount"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

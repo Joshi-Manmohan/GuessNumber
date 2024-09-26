@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e7f3fe; /* Light blue background */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for relief effect */
+    padding: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #007bff; /* Primary blue color */
+}
+
+.select-difficulty {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #007bff; /* Blue border for the select box */
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.select-difficulty:focus {
+    border-color: #0056b3; /* Darker blue when focused */
+    outline: none; /* Remove default outline */
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+input[type="number"] {
+    padding: 12px;
+    font-size: 18px;
+    margin-right: 10px;
+    border: 1px solid #007bff; /* Blue border for input */
+    border-radius: 4px;
+    flex: 1;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #0056b3; /* Darker blue when focused */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 12px 18px;
+    font-size: 18px;
+    background-color: #007bff; /* Primary blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 5px; /* Space between buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Style for the Reset button */
+#resetButton {
+    background-color: #dc3545; /* Red background for reset button */
+}
+
+#resetButton:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.message {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #dc3545; /* Danger color for messages */
+}
+
+.guessCount {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .select-difficulty,
+    input[type="number"],
+    button {
+        font-size: 16px;
+    }
+}
